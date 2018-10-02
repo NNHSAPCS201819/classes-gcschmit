@@ -135,4 +135,18 @@ public class Car
     {
         this.licensePlate = plate;
     }
+    
+    /**
+     * Returns a String describing the state of this car
+     * 
+     * @returns     a String describing the state of this car
+     */
+    public String toString()
+    {
+        String str = "License plate: " + this.getLicensePlate() +
+                "; fuel efficiency: " + this.fuelEfficiency +
+                " mpg; fuel in tank: " + this.getFuelInTank() + " gallons";
+        
+        return str;
+    }
 }
