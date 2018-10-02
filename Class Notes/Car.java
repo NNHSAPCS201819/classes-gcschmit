@@ -122,6 +122,7 @@ public class Car
      */
     public void setLicensePlate(String newPlate)
     {
+        this.licensePlate = newPlate;
     }
     
     /**
@@ -131,6 +132,19 @@ public class Car
      */
     public String getLicensePlate()
     {
-        return "";
+        return this.licensePlate;
+    }
+    
+    /**
+     * Returns a String that describes the state of this car
+     * 
+     * @return  a String that describers the state of this car
+     */
+    public String toString()
+    {
+        String str = "License plate: " + this.getLicensePlate() +
+                "; fuel efficiency: " + this.fuelEfficiency +
+                "mpg; fuel in tank: " + this.getFuelInTank() + "gallons";
+        return str;
     }
 }
